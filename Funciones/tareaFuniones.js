@@ -82,71 +82,96 @@ const trabajo = () => {
 };
 console.log(`horas trabajadas: ${trabajo()}`);
 
-///////////////////
+//Preguntas de si y no
 
 function preguntas() {
-let p
-for (let i = 0; p < 2; i++) {
-  Math.round(Math.random() * 100);
-}
-  
-  p = "La primera pregunta es: Colon descubrió América?";
-  
-  if ((p != 1)) {
-    console.log("Acertaste");
-  } else {
-    console.log("Fallaste");
+  let p;
+  for (let i = 0; p < 5; i++) {
+    Math.round(Math.random() * 100);
   }
 
-  // let pregunta1 = console.log(
-  //   "La segunda pregunta es: La independencia de Colombia fue en el año 1810?"
-  // );
-  // if (pregunta2 = 1) {
-  //   console.log("Acertaste");
-  // } else {
-  //   console.log("Fallaste");
-  // }
-  // let pregunta3 = console.log(
-  //   "La tercera pregunta es: The Doors fue un grupo de rock Americano?"
-  // );
-  // if (pregunta3 = 1) {
-  //   console.log("acertaste");
-  // } else {
-  //   console.log(`fallaste`);
-  // }
-  return p
-}
-console.log(preguntas())
+  p = console.log("La primera pregunta es: Colon descubrió América?");
 
+  if ((p = 1)) {
+    console.log("Si");
+  } else {
+    console.log("No");
+    return p;
+  }
+  let p2 = console.log(
+    "La segunda pregunta es: La independencia de Colombia fue en el año 1810?"
+  );
+  if ((p2 = 1)) {
+    console.log("Si");
+  } else {
+    console.log("No");
+    return p2;
+  }
+  let p3 = console.log(
+    "La tercera pregunta es: The Doors fue un grupo de rock Americano?"
+  );
+  if ((p3 = 1)) {
+    console.log("Si");
+  } else if ((p3 = 2)) {
+    console.log(`No`);
+    return p3;
+  }
+}
+console.log(preguntas());
 
 //Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene. Cuando el número exceda los límites emita un mensaje y finalice el programa
 
 // funcion clasica
 function cifra(nu) {
-let numero = (Math.random() * 100)
-let contador = 0;
-if (numero <= 9.999) {
-    console.log(`El numero ${numero} esta entro 0 y 9.999`)
-} else {
-    console.log(`El numero ${numero} ha excedido el limite`)
-    contador = numero
+  let numero = Math.random() * 100;
+  let contador = 0;
+  if (numero <= 9.999) {
+    console.log(`El numero ${numero} esta entro 0 y 9.999`);
+  } else {
+    console.log(`El numero ${numero} ha excedido el limite`);
+    contador = numero;
+  }
+  return contador;
 }
-return contador
-}
-console.log(`tiene ${cifra()%2} numeros de cifras despues del punto`)
+console.log(`tiene ${cifra() % 2} numeros de cifras despues del punto`);
 
 // funcion flecha
 
 const cifra2 = () => {
-  let numero = (Math.random() * 100)
-let contador = 0;
-if (numero <= 9.999) {
-    console.log(`El numero ${numero} esta entro 0 y 9.999`)
-} else {
-    console.log(`El numero ${numero} ha excedido el limite`)
-    contador = numero
+  let numero = Math.random() * 100;
+  let contador = 0;
+  if (numero <= 9.999) {
+    console.log(`El numero ${numero} esta entro 0 y 9.999`);
+  } else {
+    console.log(`El numero ${numero} ha excedido el limite`);
+    contador = numero;
+  }
+  return contador;
+};
+console.log(`tiene ${cifra2() % 2} numeros de cifras despues del punto`);
+
+//Determinar los divisores de un número introducido por teclado
+//Funcion normal
+function divisores() {
+  var numerodiv = Math.floor(Math.random() * 100);
+  for (let divisor = 1; divisor <= 100; divisor++) {
+    if (numerodiv % divisor == 0) {
+      console.log(`${divisor} es es divisor de ${numerodiv}`);
+    }
+  }
+  return numerodiv
 }
-return contador
+console.log(`El numero es: ${divisores()}`)
+
+// funcion flecha
+const divisoresF = () => {
+  var numerodiv = Math.floor(Math.random() * 100);
+  for (let divisor = 1; divisor <= 100; divisor++) {
+    if (numerodiv % divisor == 0) {
+      console.log(`${divisor} es es divisor de ${numerodiv}`);
+    }
+  }
+  return numerodiv
 }
-console.log(`tiene ${cifra2()%2} numeros de cifras despues del punto`)
-  
+console.log(`El numero es: ${divisoresF()}`)
+////////////
