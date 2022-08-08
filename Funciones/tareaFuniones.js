@@ -126,7 +126,7 @@ function cifra(nu) {
   let numero = Math.random() * 100;
   let contador = 0;
   if (numero <= 9.999) {
-    console.log(`El numero ${numero} esta entro 0 y 9.999`);
+    console.log(`El numero ${numero} esta entre 0 y 9.999`);
   } else {
     console.log(`El numero ${numero} ha excedido el limite`);
     contador = numero;
