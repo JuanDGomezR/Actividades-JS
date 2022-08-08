@@ -13,19 +13,19 @@ var indicaciones = alert(
 );
 
 let preguntaA = prompt("La primera pregunta es: Colon descubrió América?");
-if (isNaN(preguntaA) || preguntaA <= 0 || preguntaA >= 2) {
+if ((preguntaA) || preguntaA <= 0 || preguntaA >= 2) {
   alert("Incorrecto, vuelva a cargar la pagina e intentelo de nuevo");
 } else if ((preguntaA = 1)) {
   let preguntaB = prompt(
     "La segunda pregunta es: La independencia de Colombia fue en el año 1810?"
   );
-  if (isNaN(preguntaB) || preguntaB <= 0 || preguntaB >= 2) {
+  if ((preguntaB) || preguntaB <= 0 || preguntaB >= 2) {
     alert("Incorrecto, vuelva a cargar la pagina e intentelo de nuevo");
   } else if ((preguntaB = 1)) {
     let preguntaC = prompt(
       "La tercera pregunta es: The Doors fue un grupo de rock Americano?"
     );
-    if (isNaN(preguntaC) || preguntaC <= 0 || preguntaC >= 2) {
+    if ((preguntaC) || preguntaC <= 0 || preguntaC >= 2) {
       alert("Incorrecto, vuelva a cargar la pagina e intentelo de nuevo");
     } else if ((preguntaC = 1)) {
       alert(`FELICIDADES!! Has acertado todas las preguntas`);
