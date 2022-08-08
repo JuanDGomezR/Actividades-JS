@@ -123,32 +123,32 @@ console.log(preguntas());
 
 // funcion clasica
 function cifra(nu) {
-  let numero = Math.random() * 100;
+  let numero = Math.round(Math.random() * 100);
   let contador = 0;
-  if (numero <= 9.999) {
-    console.log(`El numero ${numero} esta entre 0 y 9.999`);
+  if (numero <= 9999) {
+    console.log(`El numero ${numero} esta entre 0 y 9999`);
   } else {
     console.log(`El numero ${numero} ha excedido el limite`);
-    contador = numero;
+    contador = numero + 1;
   }
   return contador;
 }
-console.log(`tiene ${cifra() % 2} numeros de cifras despues del punto`);
+console.log(`tiene ${cifra()} numeros de cifras despues del punto`);
 
 // funcion flecha
 
 const cifra2 = () => {
-  let numero = Math.random() * 100;
+  let numero = Math.round(Math.random() * 100);
   let contador = 0;
   if (numero <= 9.999) {
     console.log(`El numero ${numero} esta entro 0 y 9.999`);
   } else {
     console.log(`El numero ${numero} ha excedido el limite`);
-    contador = numero;
+    contador = numero =+ 1;
   }
   return contador;
 };
-console.log(`tiene ${cifra2() % 2} numeros de cifras despues del punto`);
+console.log(`tiene una cifra de ${cifra2()} numeros`);
 
 //Determinar los divisores de un número introducido por teclado
 //Funcion normal
