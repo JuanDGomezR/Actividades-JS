@@ -101,7 +101,7 @@ for (let i = 0; p < 2; i++) {
   // let pregunta1 = console.log(
   //   "La segunda pregunta es: La independencia de Colombia fue en el año 1810?"
   // );
-  // if ((pregunta2 = 1)) {
+  // if (pregunta2 = 1) {
   //   console.log("Acertaste");
   // } else {
   //   console.log("Fallaste");
@@ -109,7 +109,7 @@ for (let i = 0; p < 2; i++) {
   // let pregunta3 = console.log(
   //   "La tercera pregunta es: The Doors fue un grupo de rock Americano?"
   // );
-  // if ((pregunta3 = 1)) {
+  // if (pregunta3 = 1) {
   //   console.log("acertaste");
   // } else {
   //   console.log(`fallaste`);
@@ -121,6 +121,7 @@ console.log(preguntas())
 
 //Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene. Cuando el número exceda los límites emita un mensaje y finalice el programa
 
+// funcion clasica
 function cifra(nu) {
 let numero = (Math.random() * 100)
 let contador = 0;
@@ -128,9 +129,24 @@ if (numero <= 9.999) {
     console.log(`El numero ${numero} esta entro 0 y 9.999`)
 } else {
     console.log(`El numero ${numero} ha excedido el limite`)
-    contador = contador =+ 1
-    numero = (numero / 10)
+    contador = numero
 }
-return numero
+return contador
 }
-console.log(cifra())
+console.log(`tiene ${cifra()%2} numeros de cifras despues del punto`)
+
+// funcion flecha
+
+const cifra2 = () => {
+  let numero = (Math.random() * 100)
+let contador = 0;
+if (numero <= 9.999) {
+    console.log(`El numero ${numero} esta entro 0 y 9.999`)
+} else {
+    console.log(`El numero ${numero} ha excedido el limite`)
+    contador = numero
+}
+return contador
+}
+console.log(`tiene ${cifra2()%2} numeros de cifras despues del punto`)
+  
