@@ -89,7 +89,7 @@ a1 = "---------------APRENDIZ1---------------"
 console.log(a1)
 
 let apren1=new Aprendiz('Juan',1234, 2453232, 'Programacion de Software', 'desarrollo' );
-console.log(apren1.nombre, apren1.documento, apren1.ficha, apren1.programa, apren1.competencia);
+console.log(apren1);
 //otro aprendiz prueba
 // apren1.nombre="Sara";
 // apren1.documento= 4321
